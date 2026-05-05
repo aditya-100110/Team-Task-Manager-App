@@ -6,4 +6,3 @@ build
 .vscode
 .env
 node_modules
-backend/uploads/
