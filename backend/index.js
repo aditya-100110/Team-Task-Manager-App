@@ -33,7 +33,7 @@ const app = express()
 // Middleware to handle cors
 app.use(
   cors({
-    origin: process.env.FRONT_END_URL || "http://localhost:5173",
+    origin: process.env.FRONT_END_URL || "https://team-task-manager-app-esrr.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
