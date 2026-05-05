@@ -11,10 +11,22 @@ import taskRoutes from "./routes/task.route.js"
 import reportRoutes from "./routes/report.route.js"
 import { fileURLToPath } from "url"
 
+import fs from "fs";
+
 dotenv.config()
+
+
+
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
+
+const uploadDir = path.join(__dirname, "uploads");
+
+// create uploads folder if it doesn't exist
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
 
 mongoose
   .connect(process.env.MONGO_URI)
@@ -57,6 +69,7 @@ app.use("/api/reports", reportRoutes)
 
 // serve uploads
 app.use("/uploads", express.static(path.join(__dirname, "uploads")))
+
 
 // serve frontend
 const frontendPath = path.join(__dirname, "..", "frontend", "dist");
