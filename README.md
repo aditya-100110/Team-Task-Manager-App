@@ -2,7 +2,6 @@
 
 A modern full-stack team collaboration and task management platform that helps organizations manage projects, assign tasks, track progress, and improve productivity with role-based access control.
 
-
 # Features
 
 ## Authentication & Authorization
@@ -60,7 +59,6 @@ A modern full-stack team collaboration and task management platform that helps o
 * Recharts
 * Axios
 * React Icons
-* Moment.js
 
 ## Backend
 
@@ -74,7 +72,7 @@ A modern full-stack team collaboration and task management platform that helps o
 
 ## Deployment
 
-* Railway
+* Renedr
 * MongoDB Atlas
 
 ---
@@ -161,23 +159,6 @@ npm run dev
 * Update task status
 * Track task progress
 
----
-
-# Deployment
-
-## Frontend Deployment
-
-Deployed frontend using Railway.
-
-## Backend Deployment
-
-Deployed backend API using Railway.
-
-## Database
-
-MongoDB Atlas cloud database integration.
-
----
 
 # Responsive Design
 
